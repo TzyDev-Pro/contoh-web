@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profil Perusahaan - PT. Amanat Perkasa</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+      }
+
+      header {
+        background: linear-gradient(to right, #00c6ff, #0072ff);
+        color: white;
+        padding: 100px 0;
+        text-align: center;
+      }
+
+      .btn-custom {
+        background-color: #0072ff;
+        color: white;
+        font-weight: bold;
+        border-radius: 30px;
+        padding: 12px 30px;
+        transition: 0.3s ease;
+      }
+
+      .btn-custom:hover {
+        background-color: #005bb5;
+      }
+
+      .card-price {
+        font-weight: bold;
+        font-size: 1.2rem;
+      }
+      .price-card {
+        border: 2px solid #0072ff;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+      }
+
+      .price-card:hover {
+        box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+        transform: translateY(-5px);
+      }
+
+      .price-card .card-title {
+        color: #0072ff;
+        font-weight: bold;
+      }
+
+      .price-card .card-price {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #0072ff;
+      }
+
+      .testimonial-card {
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        border-radius: 10px;
+      }
+
+      .testimonial-card:hover {
+        box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+      }
+
+      .testimonial-img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      .testimonial-name {
+        font-weight: bold;
+        color: #0072ff;
+      }
+
+      .testimonial-role {
+        font-style: italic;
+        color: #6c757d;
+      }
+
+      .service-card {
+        border: 2px solid #0072ff;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+      }
+
+      .service-card:hover {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        transform: translateY(-5px);
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top"
+    >
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">Amanat Perkasa</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Kontak</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+   <!-- Header Section -->
+<header class="hero-header text-white d-flex align-items-center">
+    <div class="container text-center">
+      <h1 class="display-4 fw-bold">PT. Amanat Perkasa</h1>
+      <p class="lead">Solusi Transportasi & Pengadaan Kendaraan Terpercaya untuk Perusahaan Anda</p>
+      <a href="about.html" class="btn btn-custom mt-3">Lihat Profil Perusahaan</a>
+    </div>
+  </header>
+  
+  <style>
+    .hero-header {
+      background-image: url('https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=1400&q=80');
+      background-size: cover;
+      background-position: center;
+      min-height: 80vh;
+      position: relative;
+      z-index: 1;
+    }
+  
+    .hero-header::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.5); /* overlay gelap supaya teks terbaca */
+      z-index: -1;
+    }
+  
+    .hero-header .container {
+      position: relative;
+      z-index: 2;
+    }
+  
+    .btn-custom {
+      background-color: #0d6efd;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 30px;
+      text-transform: uppercase;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+  
+    .btn-custom:hover {
+      background-color: #084298;
+    }
+  </style>
+  
+
+    <!-- Tentang Kami Section -->
+    <section class="py-5">
+      <div class="container text-center">
+        <h2 class="fw-bold mb-4">Tentang Kami</h2>
+        <p>
+          PT. Amanat Perkasa adalah perusahaan yang bergerak di bidang
+          penyediaan kendaraan operasional dan jasa transportasi untuk
+          perusahaan dan instansi sejak tahun 2010. Kami menawarkan solusi
+          kendaraan yang efisien, aman, dan terjangkau untuk mendukung bisnis
+          Anda.
+        </p>
+        <a href="about.html" class="btn btn-custom mt-3"
+          >Pelajari Lebih Lanjut</a
+        >
+      </div>
+    </section>
+
+    <!-- Harga & Inklusi Section -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center fw-bold mb-5">Paket Harga Kami</h2>
+        <div class="row d-flex align-items-stretch">
+          <!-- Card 1 -->
+          <div class="col-md-4 mb-4">
+            <div class="card price-card text-center h-100 shadow-sm">
+              <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                  <h5 class="card-title fw-bold">Paket A</h5>
+                  <p class="card-price text-primary fs-5">
+                    Rp 5.000.000 / Bulan
+                  </p>
+                  <ul class="list-unstyled text-start ps-3">
+                    <li>✅ 1 Unit Kendaraan</li>
+                    <li>✅ Perawatan Berkala</li>
+                    <li>✅ Asuransi Kendaraan</li>
+                    <li>✅ Jasa Supir Profesional</li>
+                  </ul>
+                </div>
+                <a href="contact.html" class="btn btn-outline-primary mt-3"
+                  >Pesan Sekarang</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-md-4 mb-4">
+            <div class="card price-card text-center h-100 shadow-sm">
+              <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                  <h5 class="card-title fw-bold">Paket B</h5>
+                  <p class="card-price text-primary fs-5">
+                    Rp 8.000.000 / Bulan
+                  </p>
+                  <ul class="list-unstyled text-start ps-3">
+                    <li>✅ 2 Unit Kendaraan</li>
+                    <li>✅ Perawatan Berkala</li>
+                    <li>✅ Asuransi Kendaraan</li>
+                    <li>✅ Jasa Supir Profesional</li>
+                    <li>✅ Pelaporan Rutin</li>
+                  </ul>
+                </div>
+                <a href="contact.html" class="btn btn-outline-primary mt-3"
+                  >Pesan Sekarang</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-md-4 mb-4">
+            <div class="card price-card text-center h-100 shadow-sm">
+              <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                  <h5 class="card-title fw-bold">Paket C</h5>
+                  <p class="card-price text-primary fs-5">
+                    Rp 12.000.000 / Bulan
+                  </p>
+                  <ul class="list-unstyled text-start ps-3">
+                    <li>✅ 5 Unit Kendaraan</li>
+                    <li>✅ Perawatan Berkala</li>
+                    <li>✅ Asuransi Kendaraan</li>
+                    <li>✅ Jasa Supir Profesional</li>
+                    <li>✅ Pelaporan Rutin</li>
+                    <li>✅ Penggantian Kendaraan dalam 24 Jam</li>
+                  </ul>
+                </div>
+                <a href="contact.html" class="btn btn-outline-primary mt-3"
+                  >Pesan Sekarang</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section with Additional Cards -->
+    <section class="py-5">
+      <div class="container">
+        <h2 class="text-center fw-bold mb-5">Layanan Kami</h2>
+        <div class="row">
+          <!-- Service Card 1 -->
+          <div class="col-md-4 mb-4">
+            <div class="card service-card text-center">
+              <div class="card-body">
+                <h5 class="card-title">Layanan 1</h5>
+                <p class="card-text">
+                  Penyediaan kendaraan operasional untuk semua kebutuhan bisnis
+                  Anda, dengan dukungan 24/7.
+                </p>
+                <a href="contact.html" class="btn btn-custom"
+                  >Pelajari Lebih Lanjut</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Service Card 2 -->
+          <div class="col-md-4 mb-4">
+            <div class="card service-card text-center">
+              <div class="card-body">
+                <h5 class="card-title">Layanan 2</h5>
+                <p class="card-text">
+                  Solusi transportasi cepat dan efisien dengan harga yang
+                  kompetitif dan pelayanan terbaik.
+                </p>
+                <a href="contact.html" class="btn btn-custom"
+                  >Pelajari Lebih Lanjut</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Service Card 3 -->
+          <div class="col-md-4 mb-4">
+            <div class="card service-card text-center">
+              <div class="card-body">
+                <h5 class="card-title">Layanan 3</h5>
+                <p class="card-text">
+                  Layanan pengadaan kendaraan untuk jangka panjang dengan
+                  dukungan penuh dari tim ahli kami.
+                </p>
+                <a href="contact.html" class="btn btn-custom"
+                  >Pelajari Lebih Lanjut</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center fw-bold mb-5">Apa Kata Klien Kami?</h2>
+        <div class="row">
+          <!-- Testimonial 1 -->
+          <div class="col-md-4 mb-4 d-flex">
+            <div class="card testimonial-card text-center h-100 w-100">
+              <div class="card-body">
+                <img
+                  src="https://images.unsplash.com/photo-1503376780353-7e6692767b70"
+                  alt="Client 1"
+                  class="testimonial-img mb-3"
+                />
+                <p class="testimonial-name">John Doe</p>
+                <p class="testimonial-role">CEO, PT. X</p>
+                <p>
+                  "Kami sangat puas dengan layanan PT. Amanat Perkasa. Kendaraan
+                  yang mereka sediakan selalu dalam kondisi prima, dan tim
+                  mereka sangat profesional."
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="col-md-4 mb-4 d-flex">
+            <div class="card testimonial-card text-center h-100 w-100">
+              <div class="card-body">
+                <img
+                  src="https://images.unsplash.com/photo-1503376780353-7e6692767b70"
+                  alt="Client 2"
+                  class="testimonial-img mb-3"
+                />
+                <p class="testimonial-name">Jane Smith</p>
+                <p class="testimonial-role">Manager, PT. Y</p>
+                <p>
+                  "Layanan yang cepat dan responsif. PT. Amanat Perkasa membantu
+                  kami meningkatkan efisiensi operasional dengan solusi
+                  transportasi yang tepat."
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="col-md-4 mb-4 d-flex">
+            <div class="card testimonial-card text-center h-100 w-100">
+              <div class="card-body">
+                <img
+                  src="https://images.unsplash.com/photo-1503376780353-7e6692767b70"
+                  alt="Client 3"
+                  class="testimonial-img mb-3"
+                />
+                <p class="testimonial-name">Michael Lee</p>
+                <p class="testimonial-role">COO, PT. Z</p>
+                <p>
+                  "PT. Amanat Perkasa selalu memberikan layanan terbaik dengan
+                  kendaraan berkualitas dan harga yang kompetitif. Kami sangat
+                  merekomendasikan mereka!"
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="py-5">
+      <div class="container">
+        <h2 class="text-center fw-bold mb-5">Mengapa Memilih Kami?</h2>
+        <div class="row text-center">
+          <div class="col-md-4 mb-4">
+            <div class="p-4 shadow rounded h-100">
+              <i class="bi bi-star-fill fs-2 text-warning mb-3"></i>
+              <h5>Layanan Profesional</h5>
+              <p>
+                Kami menyediakan layanan terbaik dengan staf yang berpengalaman
+                dan responsif.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="p-4 shadow rounded h-100">
+              <i class="bi bi-shield-check fs-2 text-primary mb-3"></i>
+              <h5>Keamanan Terjamin</h5>
+              <p>
+                Semua kendaraan kami dilengkapi asuransi dan melalui inspeksi
+                rutin.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="p-4 shadow rounded h-100">
+              <i class="bi bi-cash-stack fs-2 text-success mb-3"></i>
+              <h5>Harga Kompetitif</h5>
+              <p>
+                Kami menawarkan harga yang transparan dan sesuai dengan kualitas
+                layanan.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Galeri Kendaraan -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center fw-bold mb-5">Galeri Kendaraan Kami</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <img
+              src="https://images.unsplash.com/photo-1503376780353-7e6692767b70"
+              class="img-fluid rounded shadow"
+              alt="Kendaraan 1"
+            />
+          </div>
+          <div class="col-md-4">
+            <img
+              src="https://images.unsplash.com/photo-1503376780353-7e6692767b70"
+              class="img-fluid rounded shadow"
+              alt="Kendaraan 2"
+            />
+          </div>
+          <div class="col-md-4">
+            <img
+              src="https://images.unsplash.com/photo-1503376780353-7e6692767b70"
+              class="img-fluid rounded shadow"
+              alt="Kendaraan 3"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section class="py-5">
+      <div class="container">
+        <h2 class="text-center fw-bold mb-5">Perjalanan Kami</h2>
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <div class="border-start ps-3">
+              <h5 class="fw-bold">2010</h5>
+              <p>
+                Didirikan dan mulai beroperasi sebagai penyedia jasa
+                transportasi.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="border-start ps-3">
+              <h5 class="fw-bold">2015</h5>
+              <p>
+                Memperluas layanan ke sektor pengadaan kendaraan pemerintah &
+                swasta.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="border-start ps-3">
+              <h5 class="fw-bold">2020</h5>
+              <p>Digitalisasi layanan & peluncuran platform online.</p>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="border-start ps-3">
+              <h5 class="fw-bold">2024</h5>
+              <p>
+                Melayani lebih dari 500 klien aktif dengan armada lengkap dan
+                modern.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center fw-bold mb-5">
+          Pertanyaan yang Sering Diajukan
+        </h2>
+        <div class="accordion" id="faqAccordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faq1">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse1"
+              >
+                Apakah layanan tersedia di seluruh Indonesia?
+              </button>
+            </h2>
+            <div
+              id="collapse1"
+              class="accordion-collapse collapse show"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Ya, kami melayani klien di seluruh wilayah Indonesia dengan
+                jaringan armada kami.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faq2">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse2"
+              >
+                Apakah kendaraan sudah termasuk asuransi?
+              </button>
+            </h2>
+            <div
+              id="collapse2"
+              class="accordion-collapse collapse"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Semua kendaraan kami telah dilengkapi dengan asuransi lengkap
+                termasuk TLO dan all risk.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faq3">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse3"
+              >
+                Apakah bisa sewa kendaraan tanpa driver?
+              </button>
+            </h2>
+            <div
+              id="collapse3"
+              class="accordion-collapse collapse"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Bisa, kami menyediakan opsi sewa dengan atau tanpa driver sesuai
+                kebutuhan Anda.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="py-5 text-white" style="background-color: #343a40">
+      <div class="container text-center">
+        <h3 class="fw-bold mb-3">Berlangganan Berita & Penawaran Khusus</h3>
+        <p class="mb-4">Dapatkan informasi terbaru langsung ke email Anda.</p>
+        <form class="row justify-content-center">
+          <div class="col-md-6 col-sm-8">
+            <div class="input-group">
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Masukkan email Anda"
+              />
+              <button class="btn btn-primary" type="submit">Langganan</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-light py-4">
+      <div class="container text-center">
+        <p class="mb-0">&copy; 2025 PT. Amanat Perkasa. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
